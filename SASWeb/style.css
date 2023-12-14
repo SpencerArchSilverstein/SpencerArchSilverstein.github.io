@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Copperfield";
+    src: url("https://cdn.glitch.global/9e0e1c82-71fe-4b62-b05a-3ec17f494e60/Copperfield%20Regular.ttf?v=1695614217938")
+      format("truetype");
+  }
+  
+  html {
+    text-align: left;
+  }
+  
+  .comic-font-class {
+    font-family: "Copperfield", sans-serif;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #0b1a28;
+  }
+  
+  #social-container {
+    display: flex;
+  }
+  .icon {
+    cursor: pointer;
+    height: 2rem;
+    margin-top: -20px;
+    margin-left: 10px;
+    font-family: sans-serif;
+  }
+  
+  /* ABOUT SECTION */
+  #about {
+    position: relative;
+  }
+  
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+  
+  .about-containers,
+  .about-details-container {
+    display: flex;
+  }
+  
+  .about-pic {
+    border-radius: 2rem;
+    height: 25rem;
+    margin-left: 40px;
+  }
+  
+  #the-button {
+    border-radius: 2rem;
+    background-color: #add8e6;
+    border-color: black;
+    color: white;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
+  
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: #add8e6;
+    border-radius: 2rem;
+    border: rgb(50, 50, 50) 0.1rem solid;
+    border-color: #000000;
+    text-align: center;
+  }
+  
+  .section-container {
+    gap: 4rem;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
