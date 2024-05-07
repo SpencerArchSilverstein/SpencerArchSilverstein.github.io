@@ -1,0 +1,28 @@
+.gif_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap; /* Wraps items if the container's width is exceeded */
+}
+
+.gif_item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 10px;
+}
+
+.gif_item img {
+    max-width: 500px; /* Limit the width to 500px */
+    max-height: 300px; /* Limit the height to 300px */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.gif_item button{
+    margin-top:10px;
+    width:200px;
+    height:auto;
+    font-size:20px;
+    border-radius:50px;
+}
