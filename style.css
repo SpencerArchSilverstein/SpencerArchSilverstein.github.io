@@ -1,15 +1,8 @@
-/* @font-face {
-    font-family: "Copperfield";
-    src: url("https://cdn.glitch.global/9e0e1c82-71fe-4b62-b05a-3ec17f494e60/Copperfield%20Regular.ttf?v=1695614217938")
-      format("truetype");
-  } */
-  
   html {
     text-align: left;
   }
   
-  .comic-font-class {
-    /* font-family: "Copperfield", sans-serif; */
+  .text-class {
     font-family: "Arial";
     font-size: 30px;
     margin-left: 10px;
@@ -67,7 +60,6 @@
   .details-container {
     padding: 1.5rem;
     flex: 1;
-    /* background: #add8e6; */
     border-radius: 2rem;
     border: rgb(50, 50, 50) 0.1rem solid;
     border-color: #000000;
