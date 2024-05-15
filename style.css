@@ -1,16 +1,17 @@
-@font-face {
+/* @font-face {
     font-family: "Copperfield";
     src: url("https://cdn.glitch.global/9e0e1c82-71fe-4b62-b05a-3ec17f494e60/Copperfield%20Regular.ttf?v=1695614217938")
       format("truetype");
-  }
+  } */
   
   html {
     text-align: left;
   }
   
   .comic-font-class {
-    font-family: "Copperfield", sans-serif;
-    font-size: 1.5rem;
+    /* font-family: "Copperfield", sans-serif; */
+    font-family: "Arial";
+    font-size: 30px;
     margin-left: 10px;
     color: #0b1a28;
   }
@@ -52,15 +53,11 @@
     border-radius: 2rem;
     height: 25rem;
     margin-left: 40px;
+    width:300px;
+    object-fit:cover;
+    object-position: 65% center;
   }
-  
-  #the-button {
-    border-radius: 2rem;
-    background-color: #add8e6;
-    border-color: black;
-    color: white;
-  }
-  
+
   .arrow {
     position: absolute;
     right: -5rem;
@@ -70,7 +67,7 @@
   .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: #add8e6;
+    /* background: #add8e6; */
     border-radius: 2rem;
     border: rgb(50, 50, 50) 0.1rem solid;
     border-color: #000000;
@@ -90,25 +87,4 @@
     width: 400px;
     margin: auto 0;
   }
-  .year-scrollbar-container {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    text-align: center;
-  }
-  
-  #yearScrollbar {
-    width: 100px; 
-    margin: 0 auto; 
-  }
-  
-  .year-display {
-    margin-top: 5px;
-  }
-  
-
-.nineties-style {
-  font-family: "Comic Sans MS", cursive, sans-serif; 
-}
-
   
