@@ -1,0 +1,57 @@
+[
+  {
+    "title": "MUSIC TASTING CLUB WEBSITE",
+    "titleItalic": "",
+    "detail": "Imagine a weekly book club but instead of reading books, we listen to albums. Explore details about the club's history, schedule, FAQs, blog posts and more!",
+    "outlineColor": "ffc227",
+    "mainColor": "ffd700",
+    "launchURL": "https://www.musictastingclub.com",
+    "githubURL": "https://github.com/SpencerArchSilverstein/MusicTastingClubWebsite",
+    "languages": "React, Typescript, MaterialUI",
+    "projectType": "Gen"
+  },
+  {
+    "title": "MUSIC REVIEWER DATA VISUALIZATION",
+    "titleItalic": "",
+    "detail": "Anthony Fantano has been reveiwing albums on YouTube for 14 years. Experience a data visualization of his thousands of album reviews!",
+    "outlineColor": "30cf40",
+    "mainColor": "38e849",
+    "launchURL": "https://spencerarchsilverstein.shinyapps.io/TheNeedleDropData/",
+    "githubURL": "https://github.com/SpencerArchSilverstein/TheNeedleDropReviews",
+    "languages": "R, RStudio, ShinyGG, YouTube API, JavaScript",
+    "projectType": "Gen"
+  },
+  {
+    "title": "ASK AN AI",
+    "titleItalic": "",
+    "detail": "Query 3 Generative AI chatbots (ChatGPT, Gemini, and Llama). AskAnAI allows the user to upload a PDF, and have chatbots summarize its contents.",
+    "outlineColor": "2aa4d0",
+    "mainColor": "32c3f8",
+    "launchURL": "",
+    "githubURL": "https://github.com/SpencerArchSilverstein/AskAnAI",
+    "languages": "JavaScript, AWS, S3, RDS, AWS Lambda",
+    "projectType": "Gen"
+  },
+  {
+    "title": "DUNGEON CRAWLER VIDEOGAME",
+    "titleItalic": "AphroDIEtie: Fight For Love",
+    "detail": "Play an exciting top-down dungeon crawler, where you fight different Greek gods and solve challenging puzzels in pursuit of saving your one true love.",
+    "outlineColor": "c122c9",
+    "mainColor": "f427ff",
+    "launchURL": "",
+    "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
+    "languages": "C#, Unity, Aseprite",
+    "projectType": "Game"
+  },
+  {
+    "title": "GENERATIVE METHOD PROJECTS",
+    "titleItalic": "",
+    "detail": "Witness a series of Generative Method Projects utilizing particle effects, face/hand-tracking, ",
+    "outlineColor": "c122c9",
+    "mainColor": "f427ff",
+    "launchURL": "",
+    "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
+    "languages": "JavaScript, Vue, Tracery",
+    "projectType": "Game"
+  }
+]
