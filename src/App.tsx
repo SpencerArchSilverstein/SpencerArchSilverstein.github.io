@@ -4,7 +4,16 @@ import profilePic from "./img/profilepic.png";
 import linkedInImg from "./img/linkedin_img.png";
 import githubImg from "./img/github.png";
 import mailImg from "./img/mailImg.png";
-import { Button, Grid, Alert, Box } from "@mui/material";
+import {
+  Button,
+  Grid,
+  Alert,
+  Box,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+} from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Launch } from "@mui/icons-material";
 import ProjectComponent from "./ProjectComponent";
@@ -16,13 +25,18 @@ import DownloadIcon from "@mui/icons-material/Download";
 
 function App() {
   const isMobile = useMediaQuery("(max-width: 768px)");
-  const [glitchBool, setGlitchBool] = useState(false);
+  // const [glitchBool, setGlitchBool] = useState(false);
+  const [copied, setCopied] = useState(false);
+  function copyEmail() {}
+  function handleCopyEmailClosed() {
+    setCopied(false);
+  }
   //About Me
   //Resume (Work Experience, Project Experience)
   //Technical Skills
   //Contact Me
 
-  useEffect(() => {});
+  // useEffect(() => {});
 
   return (
     <>
@@ -66,9 +80,10 @@ function App() {
             <Grid item xs={1} md={0}>
               <Button
                 style={{ height: 60, width: 15 }}
-                onClick={() =>
-                  navigator.clipboard.writeText("archsilverstein@gmail.com")
-                }
+                onClick={() => {
+                  navigator.clipboard.writeText("archsilverstein@gmail.com");
+                  setCopied(true);
+                }}
               >
                 <img src={mailImg} alt="LinkedIn" className="company-logos" />
               </Button>
@@ -76,6 +91,32 @@ function App() {
           </Grid>
         </div>
       </div>
+      <Dialog
+        open={copied}
+        onClose={handleCopyEmailClosed}
+        maxWidth="md"
+        fullWidth
+        PaperProps={{
+          sx: {
+            mx: 5,
+            mt: 0,
+            backgroundColor: "rgba(255, 255, 255, 0.85)",
+          },
+        }}
+      >
+        <DialogTitle sx={{ textAlign: "center", fontSize: "2rem" }}>
+          EMAIL COPIED TO CLIPBOARD
+        </DialogTitle>
+        <DialogActions sx={{ justifyContent: "center" }}>
+          <Button
+            onClick={handleCopyEmailClosed}
+            variant="contained"
+            sx={{ backgroundColor: "black", color: "white" }}
+          >
+            Return To Page
+          </Button>
+        </DialogActions>
+      </Dialog>
       <h1 className="project-title">PROJECTS</h1>
       <>
         {projectData.map((proj, index) => (
