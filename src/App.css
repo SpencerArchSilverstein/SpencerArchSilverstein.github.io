@@ -11,8 +11,8 @@
 
 .intro-img {
   border-radius: 10px;
-  width: 200px;
-  height: 250px;
+  width: 275px;
+  height: 350px;
 }
 
 .intro-text {
@@ -41,4 +41,18 @@
   justify-content: center;
   margin-top: 100px;
   text-align: center;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.resume img {
+  border: 3px solid lightgray;
+  border-radius: 1%;
 }

@@ -11,6 +11,8 @@ import ProjectComponent from "./ProjectComponent";
 import projectData from "./projectData.json";
 import MyGif from "./Glitch";
 import { useState } from "react";
+import Resume from "./Resume.png";
+import DownloadIcon from "@mui/icons-material/Download";
 
 function App() {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -69,7 +71,7 @@ function App() {
                 }
               >
                 <img src={mailImg} alt="LinkedIn" className="company-logos" />
-              </Button>{" "}
+              </Button>
             </Grid>
           </Grid>
         </div>
@@ -116,6 +118,14 @@ function App() {
           </>
         ))}
       </>
+
+      <div className="resume">
+        <h1>RESUME</h1>
+        <Button>
+          <DownloadIcon fontSize={"large"}></DownloadIcon>
+        </Button>
+        <img src={Resume} alt="Resume"></img>
+      </div>
     </>
   );
 }

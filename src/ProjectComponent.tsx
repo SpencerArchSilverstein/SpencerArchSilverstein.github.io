@@ -173,10 +173,10 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
               sx={{
                 backgroundColor: `#${mainColor}`,
                 "& .MuiAccordionSummary-root": {
-                  color: "#FFFFFF",
+                  color: "#000000",
                 },
                 "& .MuiAccordionSummary-expandIconWrapper": {
-                  color: "#FFFFFF",
+                  color: "#000000",
                 },
               }}
             >
@@ -185,7 +185,9 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                 aria-controls="panel2-content"
                 id="panel2-header"
               >
-                <Typography>PREVIEW OF GENERATIVE METHOD PROJECTS!</Typography>
+                <Typography fontWeight="bold">
+                  PREVIEW OF GENERATIVE METHOD PROJECTS!
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <MyGif />
