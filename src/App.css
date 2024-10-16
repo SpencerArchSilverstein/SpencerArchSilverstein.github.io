@@ -56,3 +56,7 @@
   border: 3px solid lightgray;
   border-radius: 1%;
 }
+
+.resume-text-cont {
+  display: flex;
+}

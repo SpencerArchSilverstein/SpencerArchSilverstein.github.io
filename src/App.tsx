@@ -76,6 +76,7 @@ function App() {
               >
                 <img src={githubImg} alt="LinkedIn" className="company-logos" />
               </Button>
+              34
             </Grid>
             <Grid item xs={1} md={0}>
               <Button
@@ -90,6 +91,11 @@ function App() {
             </Grid>
           </Grid>
         </div>
+        {/* <h1>About</h1>
+        <p>
+          Hi, my name is Arch. I'm a Full-Stack Developer who works in
+          Typescript/React and a Game Developer who works in C#/Unity.
+        </p> */}
       </div>
       <Dialog
         open={copied}
@@ -100,6 +106,7 @@ function App() {
           sx: {
             mx: 5,
             mt: 0,
+            width: 400,
             backgroundColor: "rgba(255, 255, 255, 0.85)",
           },
         }}
@@ -161,10 +168,9 @@ function App() {
       </>
 
       <div className="resume">
-        <h1>RESUME</h1>
-        <Button>
-          <DownloadIcon fontSize={"large"}></DownloadIcon>
-        </Button>
+        <div className="resume-text-cont">
+          <h1>RESUME</h1>
+        </div>
         <img src={Resume} alt="Resume"></img>
       </div>
     </>
