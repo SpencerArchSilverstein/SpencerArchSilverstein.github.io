@@ -76,7 +76,6 @@ function App() {
               >
                 <img src={githubImg} alt="LinkedIn" className="company-logos" />
               </Button>
-              34
             </Grid>
             <Grid item xs={1} md={0}>
               <Button
