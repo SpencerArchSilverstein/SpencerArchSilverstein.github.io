@@ -85,7 +85,7 @@ function App() {
                   setCopied(true);
                 }}
               >
-                <img src={mailImg} alt="LinkedIn" className="company-logos" />
+                <img src={mailImg} alt="LinkedIn " className="company-logos" />
               </Button>
             </Grid>
           </Grid>
