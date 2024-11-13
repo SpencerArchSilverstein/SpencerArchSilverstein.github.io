@@ -4,6 +4,7 @@ import profilePic from "./img/profilepic.png";
 import linkedInImg from "./img/linkedin_img.png";
 import githubImg from "./img/github.png";
 import mailImg from "./img/mailImg.png";
+import DownloadButton from "./DownloadButton";
 import {
   Button,
   Grid,
@@ -90,11 +91,12 @@ function App() {
             </Grid>
           </Grid>
         </div>
-        {/* <h1>About</h1>
-        <p>
+      </div>
+      <div className="intro-cont">
+        <h2>
           Hi, my name is Arch. I'm a Full-Stack Developer who works in
           Typescript/React and a Game Developer who works in C#/Unity.
-        </p> */}
+        </h2>
       </div>
       <Dialog
         open={copied}
@@ -168,7 +170,9 @@ function App() {
 
       <div className="resume">
         <div className="resume-text-cont">
-          <h1>RESUME</h1>
+          <h1>
+            RESUME <DownloadButton />
+          </h1>
         </div>
         <img src={Resume} alt="Resume"></img>
       </div>
