@@ -9,7 +9,7 @@
     "githubURL": "https://github.com/MusicTastingClubNU/mtc",
     "languages": "React, Typescript, MaterialUI, GitHub Pages, Google Cloud",
     "projectType": "Gen",
-    "workedOnRange": "January 2024-Present"
+    "workedOnRange": "January 2024 - Present"
   },
   {
     "title": "TASK ME LATER",
@@ -21,7 +21,7 @@
     "githubURL": "https://github.com/394-s25/task_me_later",
     "languages": "React, JavaScript, MaterialUI, Google Cloud",
     "projectType": "Gen",
-    "workedOnRange": ""
+    "workedOnRange": "April 2025 - Present"
   },
   {
     "title": "JUNO",
@@ -33,7 +33,7 @@
     "githubURL": "https://github.com/394-w25/Juno",
     "languages": "React, JavaScript, MaterialUI, Google Cloud, Design Guidance From Clients",
     "projectType": "Gen",
-    "workedOnRange": ""
+    "workedOnRange": "February 2025 - Present"
   },
   {
     "title": "FURNITURE FLOW",
@@ -45,19 +45,7 @@
     "githubURL": "https://github.com/394-w25/FurnitureFlow",
     "languages": "React, JavaScript, MaterialUI, Google Cloud",
     "projectType": "Gen",
-    "workedOnRange": ""
-  },
-  {
-    "title": "MUSIC REVIEWER DATA VISUALIZATION",
-    "titleItalic": "",
-    "detail": "Anthony Fantano has been reveiwing albums on YouTube for 14 years. Experience a data visualization of his thousands of album reviews!",
-    "outlineColor": "30cf40",
-    "mainColor": "38e849",
-    "launchURL": "https://spencerarchsilverstein.shinyapps.io/TheNeedleDropData/",
-    "githubURL": "https://github.com/SpencerArchSilverstein/TheNeedleDropReviews",
-    "languages": "R, RStudio, ShinyGG, YouTube API, JavaScript",
-    "projectType": "Gen",
-    "workedOnRange": ""
+    "workedOnRange": "January 2025 - Present"
   },
   {
     "title": "ASK AN AI",
@@ -69,7 +57,19 @@
     "githubURL": "https://github.com/SpencerArchSilverstein/AskAnAI",
     "languages": "JavaScript, AWS, S3, RDS, AWS Lambda",
     "projectType": "Gen",
-    "workedOnRange": ""
+    "workedOnRange": "May 2024 - June 2024"
+  },
+  {
+    "title": "MUSIC REVIEWER DATA VISUALIZATION",
+    "titleItalic": "",
+    "detail": "Anthony Fantano has been reveiwing albums on YouTube for 14 years. Experience a data visualization of his thousands of album reviews!",
+    "outlineColor": "30cf40",
+    "mainColor": "38e849",
+    "launchURL": "https://spencerarchsilverstein.shinyapps.io/TheNeedleDropData/",
+    "githubURL": "https://github.com/SpencerArchSilverstein/TheNeedleDropReviews",
+    "languages": "R, RStudio, ShinyGG, YouTube API, JavaScript",
+    "projectType": "Gen",
+    "workedOnRange": "July 2023 - August 2023"
   },
   {
     "title": "DUNGEON CRAWLER VIDEOGAME",
