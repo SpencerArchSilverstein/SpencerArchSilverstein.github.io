@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e93eba1d.css",
-    "main.js": "/static/js/main.d64382dc.js",
+    "main.css": "/static/css/main.c1fbcc52.css",
+    "main.js": "/static/js/main.ed711c73.js",
     "static/js/453.a853c6f5.chunk.js": "/static/js/453.a853c6f5.chunk.js",
     "static/media/gif2.gif": "/static/media/gif2.81344c52254a6bf11fa8.gif",
     "static/media/gif3.gif": "/static/media/gif3.dbd48d2aad670ef48a1a.gif",
@@ -10,18 +10,18 @@
     "static/media/gif6.gif": "/static/media/gif6.a26c905663e07c233978.gif",
     "static/media/gif5.gif": "/static/media/gif5.b297fa8bf3a537bcaf23.gif",
     "static/media/gif4.gif": "/static/media/gif4.0f7595bc66e171b77b0e.gif",
-    "static/media/Resume.png": "/static/media/Resume.0e5a67da192497a11208.png",
+    "static/media/Resume.png": "/static/media/Resume.469c42764edc3cd98c86.png",
     "static/media/ArchSilversteinResume.pdf": "/static/media/ArchSilversteinResume.e50c3631cf4d4aa245b2.pdf",
     "static/media/gif1.gif": "/static/media/gif1.ff3f0fd6c8bb2b8bb4c9.gif",
     "static/media/mailImg.png": "/static/media/mailImg.b774a099cd848cd11fdf.png",
     "static/media/linkedin_img.png": "/static/media/linkedin_img.ba884e1f9ad4362348c1.png",
     "index.html": "/index.html",
-    "main.e93eba1d.css.map": "/static/css/main.e93eba1d.css.map",
-    "main.d64382dc.js.map": "/static/js/main.d64382dc.js.map",
+    "main.c1fbcc52.css.map": "/static/css/main.c1fbcc52.css.map",
+    "main.ed711c73.js.map": "/static/js/main.ed711c73.js.map",
     "453.a853c6f5.chunk.js.map": "/static/js/453.a853c6f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e93eba1d.css",
-    "static/js/main.d64382dc.js"
+    "static/css/main.c1fbcc52.css",
+    "static/js/main.ed711c73.js"
   ]
 }
