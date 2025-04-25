@@ -13,6 +13,7 @@
   border-radius: 10px;
   width: 275px;
   height: 350px;
+  margin-right: 40px;
 }
 
 .intro-text {
@@ -39,7 +40,7 @@
 .project-title {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 20px;
   text-align: center;
 }
 

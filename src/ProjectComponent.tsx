@@ -20,6 +20,7 @@ interface ProjectComponentProps {
   githubURL?: string;
   languages?: string;
   projectType?: string;
+  workedOnRange?: string;
 }
 
 const ProjectComponent: React.FC<ProjectComponentProps> = ({
@@ -32,6 +33,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
   githubURL,
   languages,
   projectType,
+  workedOnRange,
 }: ProjectComponentProps) => {
   const openLink = (url: string) => {
     window.open(url, "_blank");
@@ -132,6 +134,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
               <h1 className="responsiveTitles">
                 {title} <i>{titleItalic}</i>
               </h1>
+              <h3 style={{ marginTop: -5 }}>{workedOnRange}</h3>
               <div style={projectTextTitleContStyle}>
                 {launchURL && (
                   <Launch
@@ -173,10 +176,10 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
               sx={{
                 backgroundColor: `#${mainColor}`,
                 "& .MuiAccordionSummary-root": {
-                  color: "#000000",
+                  color: "#FFFFFF",
                 },
                 "& .MuiAccordionSummary-expandIconWrapper": {
-                  color: "#000000",
+                  color: "#FFFFFF",
                 },
               }}
             >
@@ -185,9 +188,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                 aria-controls="panel2-content"
                 id="panel2-header"
               >
-                <Typography fontWeight="bold">
-                  PREVIEW OF GENERATIVE METHOD PROJECTS!
-                </Typography>
+                <Typography>PREVIEW OF GENERATIVE METHOD PROJECTS!</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <MyGif />

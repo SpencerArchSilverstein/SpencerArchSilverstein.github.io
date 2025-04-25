@@ -6,9 +6,46 @@
     "outlineColor": "ffc227",
     "mainColor": "ffd700",
     "launchURL": "https://www.musictastingclub.com",
-    "githubURL": "https://github.com/SpencerArchSilverstein/MusicTastingClubWebsite",
-    "languages": "React, Typescript, MaterialUI",
-    "projectType": "Gen"
+    "githubURL": "https://github.com/MusicTastingClubNU/mtc",
+    "languages": "React, Typescript, MaterialUI, GitHub Pages, Google Cloud",
+    "projectType": "Gen",
+    "workedOnRange": "January 2024-Present"
+  },
+  {
+    "title": "TASK ME LATER",
+    "titleItalic": "",
+    "detail": "A site that helps engineers keep track of project tasks and delegate responsibilities.",
+    "outlineColor": "d6d6d6",
+    "mainColor": "e8e8e8",
+    "launchURL": "https://task-me-later.web.app/",
+    "githubURL": "https://github.com/394-s25/task_me_later",
+    "languages": "React, JavaScript, MaterialUI, Google Cloud",
+    "projectType": "Gen",
+    "workedOnRange": ""
+  },
+  {
+    "title": "JUNO",
+    "titleItalic": "",
+    "detail": "A site that leverages the ChatGPT and Gemini APIs to help local businesses generate marketing campaigns in the form of instagram posts and posters.",
+    "outlineColor": "df3f1d",
+    "mainColor": "ff461f",
+    "launchURL": "https://juno-154f7.web.app/",
+    "githubURL": "https://github.com/394-w25/Juno",
+    "languages": "React, JavaScript, MaterialUI, Google Cloud, Design Guidance From Clients",
+    "projectType": "Gen",
+    "workedOnRange": ""
+  },
+  {
+    "title": "FURNITURE FLOW",
+    "titleItalic": "",
+    "detail": "A peer to peer site exclusively for graduating students to sell their furniture to rising Juniors moving off campus.",
+    "outlineColor": "9244cc",
+    "mainColor": "ae45fb",
+    "launchURL": "https://furniture-flow.web.app/",
+    "githubURL": "https://github.com/394-w25/FurnitureFlow",
+    "languages": "React, JavaScript, MaterialUI, Google Cloud",
+    "projectType": "Gen",
+    "workedOnRange": ""
   },
   {
     "title": "MUSIC REVIEWER DATA VISUALIZATION",
@@ -19,7 +56,8 @@
     "launchURL": "https://spencerarchsilverstein.shinyapps.io/TheNeedleDropData/",
     "githubURL": "https://github.com/SpencerArchSilverstein/TheNeedleDropReviews",
     "languages": "R, RStudio, ShinyGG, YouTube API, JavaScript",
-    "projectType": "Gen"
+    "projectType": "Gen",
+    "workedOnRange": ""
   },
   {
     "title": "ASK AN AI",
@@ -30,10 +68,11 @@
     "launchURL": "",
     "githubURL": "https://github.com/SpencerArchSilverstein/AskAnAI",
     "languages": "JavaScript, AWS, S3, RDS, AWS Lambda",
-    "projectType": "Gen"
+    "projectType": "Gen",
+    "workedOnRange": ""
   },
   {
-    "title": " VIDEOGAME",
+    "title": "DUNGEON CRAWLER VIDEOGAME",
     "titleItalic": "AphroDIEtie: Fight For Love",
     "detail": "Play an exciting top-down dungeon crawler, where you fight different Greek gods and solve challenging puzzels in pursuit of saving your one true love.",
     "outlineColor": "c122c9",
@@ -41,17 +80,19 @@
     "launchURL": "",
     "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
     "languages": "C#, Unity, Aseprite",
-    "projectType": "Game"
+    "projectType": "Game",
+    "workedOnRange": ""
   },
   {
     "title": "GENERATIVE METHOD PROJECTS",
     "titleItalic": "",
     "detail": "Witness a series of Generative Method Projects utilizing particle effects, face/hand-tracking, ",
-    "outlineColor": "c43543",
-    "mainColor": "f54254",
-    "launchURL": "https://glitch.com/@archiesilverstein2025",
-    "githubURL": "",
+    "outlineColor": "c122c9",
+    "mainColor": "f427ff",
+    "launchURL": "",
+    "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
     "languages": "JavaScript, Vue, Tracery",
-    "projectType": "Game"
+    "projectType": "Game",
+    "workedOnRange": ""
   }
 ]

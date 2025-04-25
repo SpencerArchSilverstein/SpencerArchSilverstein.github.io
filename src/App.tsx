@@ -42,12 +42,27 @@ function App() {
   return (
     <>
       <div className="intro-cont">
-        <div>
-          <img src={profilePic} alt="ProfilePic" className="intro-img" />
-        </div>
         <div className="into-text">
-          <h1 className="hi-im-arch">Hi, I'm Arch.</h1>
+          <h1 className="hi-im-arch">
+            <img src={profilePic} alt="ProfilePic" className="intro-img" />
+            Hi, I'm Arch.
+          </h1>
           <h2>Software Engineer | Full Stack Developer | Game Developer</h2>
+          <h3>
+            I specialize in the following languages/libraries: React,
+            Typescript, Tailwind, CSS, Node.js, Google Cloud, AWS, SQL, GraphQL,
+            HTML, JavaScript, Python, R, RStudio, C, C++, GitHub, C#, Unity,
+            Docker, Numpy
+          </h3>
+          <h3>
+            I have taken relevant coursework in the following topics: Full Stack
+            Development, Machine/Deep Learning, Machine Perception of Audio, AI
+            APIs, Generative Methods, Relational Databases, AGILE, Game Design
+          </h3>
+          <h3>
+            Contact me below through the means below if you have any questions
+            about my work!
+          </h3>
           <Grid
             container
             spacing={10}
@@ -92,12 +107,6 @@ function App() {
           </Grid>
         </div>
       </div>
-      <div className="intro-cont">
-        <h2>
-          Hi, my name is Arch. I'm a Full-Stack Developer who works in
-          Typescript/React and a Game Developer who works in C#/Unity.
-        </h2>
-      </div>
       <Dialog
         open={copied}
         onClose={handleCopyEmailClosed}
@@ -129,7 +138,7 @@ function App() {
       <>
         {projectData.map((proj, index) => (
           <>
-            {proj.projectType === "Gen" ? (
+            {proj.projectType === "Gen" && (
               <ProjectComponent
                 title={proj.title}
                 titleItalic={proj.titleItalic}
@@ -139,9 +148,8 @@ function App() {
                 launchURL={proj.launchURL}
                 githubURL={proj.githubURL}
                 languages={proj.languages}
+                workedOnRange={proj.workedOnRange}
               />
-            ) : (
-              <></>
             )}
           </>
         ))}
@@ -150,7 +158,7 @@ function App() {
       <>
         {projectData.map((proj, index) => (
           <>
-            {proj.projectType === "Game" ? (
+            {proj.projectType === "Game" && (
               <ProjectComponent
                 title={proj.title}
                 titleItalic={proj.titleItalic}
@@ -160,9 +168,8 @@ function App() {
                 launchURL={proj.launchURL}
                 githubURL={proj.githubURL}
                 languages={proj.languages}
+                workedOnRange={proj.workedOnRange}
               />
-            ) : (
-              <></>
             )}
           </>
         ))}
