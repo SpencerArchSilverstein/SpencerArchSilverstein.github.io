@@ -64,23 +64,22 @@
 }
 
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.05em solid #cccccc; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.05em; /* Adjust as needed */
-  animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  border-right: 0.05em solid #cccccc;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.05em; 
+  animation: typing 0.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 9ch; /* enough characters to fit your string */
+    width: 9ch; 
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
   to {

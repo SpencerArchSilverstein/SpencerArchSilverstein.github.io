@@ -1,7 +1,7 @@
 import { Launch } from "@mui/icons-material";
 import { Button, Card } from "@mui/material";
 import React, { CSSProperties } from "react";
-import githubImg from "./img/github.png";
+import githubImg from "./img/graygithub.png";
 import MyGif from "./Glitch";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -88,9 +88,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
 
   return (
     <>
-      {/* <div style={outerStyle}>
-        <div style={innerStyle}> */}
-      <Card style={{ maxWidth: 300, background: "#404040",color:"#CCCCCC" }}>
+      <Card style={{ maxWidth: 300, background: "#404040", color: "#CCCCCC" }}>
         <div>
           <h1 style={{ textAlign: "center" }}>
             {title} <i>{titleItalic}</i>
@@ -130,7 +128,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
           )}
         </div>
       </Card>
-
+      {/*  For now, commenting this out...
       <div>
         {title === "GENERATIVE METHOD PROJECTS" && (
           <Accordion
@@ -157,19 +155,36 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
           </Accordion>
         )}
       </div>
+       // {
+  //   "title": "DUNGEON CRAWLER VIDEOGAME",
+  //   "titleItalic": "AphroDIEtie: Fight For Love",
+  //   "detail": "Play an exciting top-down dungeon crawler, where you fight different Greek gods and solve challenging puzzels in pursuit of saving your one true love.",
+  //   "outlineColor": "c122c9",
+  //   "mainColor": "f427ff",
+  //   "launchURL": "",
+  //   "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
+  //   "languages": "C#, Unity, Aseprite",
+  //   "projectType": "Game",
+  //   "workedOnRange": ""
+  // },
+  // {
+  //   "title": "GENERATIVE METHOD PROJECTS",
+  //   "titleItalic": "",
+  //   "detail": "Witness a series of Generative Method Projects utilizing particle effects, face/hand-tracking, ",
+  //   "outlineColor": "c122c9",
+  //   "mainColor": "f427ff",
+  //   "launchURL": "",
+  //   "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
+  //   "languages": "JavaScript, Vue, Tracery",
+  //   "projectType": "Game",
+  //   "workedOnRange": ""
+  // }
+      
+      
+      
+      */}
     </>
   );
 };
 
 export default ProjectComponent;
-
-//   {
-//     "title": "",
-//     "titleItalic": "",
-//     "detail": "",
-//     "outlineColor": "",
-//     "mainColor": "",
-//     "launchURL": "",
-//     "githubURL": "",
-//     "languages": ""
-//   }

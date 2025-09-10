@@ -70,29 +70,5 @@
     "languages": "R, RStudio, ShinyGG, YouTube API, JavaScript",
     "projectType": "Gen",
     "workedOnRange": "July 2023 - August 2023"
-  },
-  {
-    "title": "DUNGEON CRAWLER VIDEOGAME",
-    "titleItalic": "AphroDIEtie: Fight For Love",
-    "detail": "Play an exciting top-down dungeon crawler, where you fight different Greek gods and solve challenging puzzels in pursuit of saving your one true love.",
-    "outlineColor": "c122c9",
-    "mainColor": "f427ff",
-    "launchURL": "",
-    "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
-    "languages": "C#, Unity, Aseprite",
-    "projectType": "Game",
-    "workedOnRange": ""
-  },
-  {
-    "title": "GENERATIVE METHOD PROJECTS",
-    "titleItalic": "",
-    "detail": "Witness a series of Generative Method Projects utilizing particle effects, face/hand-tracking, ",
-    "outlineColor": "c122c9",
-    "mainColor": "f427ff",
-    "launchURL": "",
-    "githubURL": "https://github.com/zoryah-gray/377_Aphrodite_Fight_For_Love",
-    "languages": "JavaScript, Vue, Tracery",
-    "projectType": "Game",
-    "workedOnRange": ""
   }
 ]

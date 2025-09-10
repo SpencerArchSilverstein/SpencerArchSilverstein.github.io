@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import profilePic from "./img/profilepic2.jpg";
-import linkedInImg from "./img/linkedin2.png";
-import githubImg from "./img/github.png";
-import mailImg from "./img/mailImg.png";
+import profilePic from "./img/profilepic3.png";
+import linkedInImg from "./img/graylinkedin.png";
+import githubImg from "./img/graygithub.png";
+import mailImg from "./img/graymail.png";
 import DownloadButton from "./DownloadButton";
 import {
   Button,
@@ -23,15 +23,13 @@ import MyGif from "./Glitch";
 import { useState } from "react";
 import Resume from "./Resume.png";
 import DownloadIcon from "@mui/icons-material/Download";
+import ContactMe from "./ContactMe";
+import { relative } from "path";
 
 function App() {
   const isMobile = useMediaQuery("(max-width: 768px)");
   // const [glitchBool, setGlitchBool] = useState(false);
-  const [copied, setCopied] = useState(false);
-  function copyEmail() {}
-  function handleCopyEmailClosed() {
-    setCopied(false);
-  }
+
   //About Me
   //Resume (Work Experience, Project Experience)
   //Technical Skills
@@ -58,16 +56,28 @@ function App() {
               alignItems: "center",
             }}
           >
-            <img
-              src={profilePic}
-              alt="ProfilePic"
+            <div
               style={{
-                width: 300,
+                width: 200,
+                height: 200,
+                overflow: "hidden",
                 borderRadius: 50,
-                marginTop: 40,
+                marginTop: 20,
+                display: "flex",
+                justifyContent: "center",
                 alignItems: "center",
               }}
-            />
+            >
+              <img
+                src={profilePic}
+                alt="ProfilePic"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </div>
+
             <h1
               className="typewriter"
               style={{ fontSize: 50, textAlign: "center", marginTop: 10 }}
@@ -79,78 +89,13 @@ function App() {
               Specialties: React, Svelte 5, Go, Typescript, Firebase/Firestore
             </h3>
           </div>
-
-          <Grid
-            container
-            spacing={10}
-            justifyContent="left"
-            alignItems="center"
-          >
-            <Grid item xs={1} md={0}>
-              <Button
-                style={{ height: 60, width: 10 }}
-                href="https://www.linkedin.com/in/spencer-silverstein/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={linkedInImg}
-                  alt="LinkedIn"
-                  className="company-logos"
-                />
-              </Button>
-            </Grid>
-            <Grid item xs={1} md={0}>
-              <Button
-                style={{ height: 60, width: 10 }}
-                href="https://github.com/SpencerArchSilverstein"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={githubImg} alt="LinkedIn" className="company-logos" />
-              </Button>
-            </Grid>
-            <Grid item xs={1} md={0}>
-              <Button
-                style={{ height: 60, width: 15 }}
-                onClick={() => {
-                  navigator.clipboard.writeText("archsilverstein@gmail.com");
-                  setCopied(true);
-                }}
-              >
-                <img src={mailImg} alt="LinkedIn " className="company-logos" />
-              </Button>
-            </Grid>
-          </Grid>
         </div>
       </div>
-      <Dialog
-        open={copied}
-        onClose={handleCopyEmailClosed}
-        maxWidth="md"
-        fullWidth
-        PaperProps={{
-          sx: {
-            mx: 5,
-            mt: 0,
-            width: 400,
-            backgroundColor: "rgba(255, 255, 255, 0.85)",
-          },
-        }}
-      >
-        <DialogTitle sx={{ textAlign: "center", fontSize: "2rem" }}>
-          EMAIL COPIED TO CLIPBOARD
-        </DialogTitle>
-        <DialogActions sx={{ justifyContent: "center" }}>
-          <Button
-            onClick={handleCopyEmailClosed}
-            variant="contained"
-            sx={{ backgroundColor: "black", color: "white" }}
-          >
-            Return To Page
-          </Button>
-        </DialogActions>
-      </Dialog>
+      <ContactMe
+        linkedInImg={linkedInImg}
+        githubImg={githubImg}
+        mailImg={mailImg}
+      />
       <h1 className="project-title">PROJECTS</h1>
       <div
         style={{
@@ -178,7 +123,7 @@ function App() {
           </div>
         ))}
       </div>
-      <h1 className="project-title">DESIGN PORTFOLIO</h1>
+      {/* <h1 className="project-title">DESIGN PORTFOLIO</h1>
       <>
         {projectData.map((proj, index) => (
           <>
@@ -197,7 +142,7 @@ function App() {
             )}
           </>
         ))}
-      </>
+      </> */}
 
       <div className="resume">
         <div className="resume-text-cont">
@@ -205,7 +150,17 @@ function App() {
             RESUME <DownloadButton />
           </h1>
         </div>
-        <img src={Resume} alt="Resume"></img>
+        <div className="flex justify-center items-center h-screen">
+          <iframe
+            src="https://docs.google.com/document/d/1TZ94vJ86ezDk802_8kvySViTC5WGqL4WUzpNV3gkeP4/edit?usp=sharing"
+            style={{
+              width: "90vh",
+              height: "80vh",
+              border: "none",
+            }}
+            title="Google Doc"
+          />
+        </div>
       </div>
     </div>
   );
