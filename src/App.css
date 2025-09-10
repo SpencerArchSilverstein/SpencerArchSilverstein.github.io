@@ -11,9 +11,9 @@
 
 .intro-img {
   border-radius: 10px;
-  width: 275px;
-  height: 350px;
-  margin-right: 40px;
+  height: 300px;
+  overflow: hidden;
+  align-items: center;
 }
 
 .intro-text {
@@ -30,6 +30,7 @@
   width: 40px;
   height: 40px;
   margin: 10px;
+  background-color: "#CCCCCC";
 }
 
 .inner-logo-cont {
@@ -60,4 +61,32 @@
 
 .resume-text-cont {
   display: flex;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.05em solid #cccccc; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9ch; /* enough characters to fit your string */
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #cccccc;
+  }
 }

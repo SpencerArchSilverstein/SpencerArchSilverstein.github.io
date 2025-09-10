@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import profilePic from "./img/profilepic.png";
-import linkedInImg from "./img/linkedin_img.png";
+import profilePic from "./img/profilepic2.jpg";
+import linkedInImg from "./img/linkedin2.png";
 import githubImg from "./img/github.png";
 import mailImg from "./img/mailImg.png";
 import DownloadButton from "./DownloadButton";
@@ -40,29 +40,46 @@ function App() {
   // useEffect(() => {});
 
   return (
-    <>
-      <div className="intro-cont">
-        <div className="into-text">
-          <h1 className="hi-im-arch">
-            <img src={profilePic} alt="ProfilePic" className="intro-img" />
-            Hi, I'm Arch.
-          </h1>
-          <h2>Software Engineer | Full Stack Developer | Game Developer</h2>
-          <h3>
-            I specialize in the following languages/libraries: React,
-            Typescript, Tailwind, CSS, Node.js, Google Cloud, AWS, SQL, GraphQL,
-            HTML, JavaScript, Python, R, RStudio, C, C++, GitHub, C#, Unity,
-            Docker, Numpy
-          </h3>
-          <h3>
-            I have taken relevant coursework in the following topics: Full Stack
-            Development, Machine/Deep Learning, Machine Perception of Audio, AI
-            APIs, Generative Methods, Relational Databases, AGILE, Game Design
-          </h3>
-          <h3>
-            Contact me below through the means below if you have any questions
-            about my work!
-          </h3>
+    <div style={{ background: "#202020", color: "#CCCCCC" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ margin: 40 }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={profilePic}
+              alt="ProfilePic"
+              style={{
+                width: 300,
+                borderRadius: 50,
+                marginTop: 40,
+                alignItems: "center",
+              }}
+            />
+            <h1
+              className="typewriter"
+              style={{ fontSize: 50, textAlign: "center", marginTop: 10 }}
+            >
+              Hi, I'm Arch
+            </h1>
+            <h2>SWE | Full Stack Developer | Northwestern '25</h2>
+            <h3 style={{ marginTop: -5 }}>
+              Specialties: React, Svelte 5, Go, Typescript, Firebase/Firestore
+            </h3>
+          </div>
+
           <Grid
             container
             spacing={10}
@@ -135,9 +152,16 @@ function App() {
         </DialogActions>
       </Dialog>
       <h1 className="project-title">PROJECTS</h1>
-      <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flex: "wrap",
+          gap: 10,
+        }}
+      >
         {projectData.map((proj, index) => (
-          <>
+          <div key={index}>
             {proj.projectType === "Gen" && (
               <ProjectComponent
                 title={proj.title}
@@ -151,9 +175,9 @@ function App() {
                 workedOnRange={proj.workedOnRange}
               />
             )}
-          </>
+          </div>
         ))}
-      </>
+      </div>
       <h1 className="project-title">DESIGN PORTFOLIO</h1>
       <>
         {projectData.map((proj, index) => (
@@ -183,7 +207,7 @@ function App() {
         </div>
         <img src={Resume} alt="Resume"></img>
       </div>
-    </>
+    </div>
   );
 }
 
