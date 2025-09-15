@@ -1,74 +1,102 @@
 [
   {
     "title": "MUSIC TASTING CLUB WEBSITE",
-    "titleItalic": "",
     "detail": "Explore details about the club's history, schedule, FAQs, blog posts and more!",
-    "outlineColor": "ffc227",
-    "mainColor": "ffd700",
     "launchURL": "https://www.musictastingclub.com",
     "githubURL": "https://github.com/MusicTastingClubNU/mtc",
-    "languages": "React, Typescript, MaterialUI, GitHub Pages, Google Cloud",
-    "projectType": "Gen",
-    "workedOnRange": "January 2024 - Present"
+    "languages": [
+      "React",
+      "Typescript",
+      "MaterialUI",
+      "GitHub Pages",
+      "Google Cloud"
+    ],
+    "projectType": "Project",
+    "workedOnRange": "Jan '24 - Present"
   },
   {
     "title": "TASK ME LATER",
-    "titleItalic": "",
+
     "detail": "A site that helps engineers keep track of project tasks and delegate responsibilities.",
     "outlineColor": "d6d6d6",
     "mainColor": "e8e8e8",
     "launchURL": "https://task-me-later.web.app/",
-    "githubURL": "https://github.com/394-s25/task_me_later",
-    "languages": "React, JavaScript, MaterialUI, Google Cloud",
-    "projectType": "Gen",
-    "workedOnRange": "April 2025 - Present"
+    "githubURL": "https://github.com/394-s'25/task_me_later",
+    "languages": ["React", "JavaScript", "MaterialUI", "Google Cloud"],
+    "projectType": "Project",
+    "workedOnRange": "April '25 - May '25"
   },
   {
     "title": "JUNO",
-    "titleItalic": "",
     "detail": "A site that leverages the ChatGPT and Gemini APIs to help local businesses generate marketing campaigns in the form of instagram posts and posters.",
     "outlineColor": "df3f1d",
     "mainColor": "ff461f",
     "launchURL": "https://juno-154f7.web.app/",
-    "githubURL": "https://github.com/394-w25/Juno",
-    "languages": "React, JavaScript, MaterialUI, Google Cloud, AI APIs, Design Guidance From Clients",
-    "projectType": "Gen",
-    "workedOnRange": "February 2025 - Present"
+    "githubURL": "https://github.com/394-w'25/Juno",
+    "languages": [
+      "React",
+      "JavaScript",
+      "MaterialUI",
+      "Google Cloud",
+      "AI APIs",
+      "Client-Based Project"
+    ],
+    "projectType": "Project",
+    "workedOnRange": "Feb '25 - March '25"
   },
   {
     "title": "FURNITURE FLOW",
-    "titleItalic": "",
     "detail": "A peer to peer site exclusively for graduating students to sell their furniture to rising Juniors moving off campus.",
     "outlineColor": "9244cc",
     "mainColor": "ae45fb",
     "launchURL": "https://furniture-flow.web.app/",
-    "githubURL": "https://github.com/394-w25/FurnitureFlow",
-    "languages": "React, JavaScript, MaterialUI, Google Cloud",
-    "projectType": "Gen",
-    "workedOnRange": "January 2025 - Present"
+    "githubURL": "https://github.com/394-w'25/FurnitureFlow",
+    "languages": ["React", "JavaScript", "MaterialUI", "Google Cloud"],
+    "projectType": "Project",
+    "workedOnRange": "Jan '25 - Feb '25"
   },
   {
     "title": "ASK AN AI",
-    "titleItalic": "",
     "detail": "Query 3 Generative AI chatbots (ChatGPT, Gemini, and Llama). AskAnAI allows the user to upload a PDF, and have chatbots summarize its contents.",
     "outlineColor": "2aa4d0",
     "mainColor": "32c3f8",
     "launchURL": "",
     "githubURL": "https://github.com/SpencerArchSilverstein/AskAnAI",
-    "languages": "JavaScript, AWS, S3, RDS, AWS Lambda",
-    "projectType": "Gen",
-    "workedOnRange": "May 2024 - June 2024"
+    "languages": ["JavaScript", "AWS (S3/RDS/Lambda)"],
+    "projectType": "Project",
+    "workedOnRange": "May '24 - June '24"
   },
   {
     "title": "MUSIC REVIEWER DATA VISUALIZATION",
-    "titleItalic": "",
     "detail": "Anthony Fantano has been reveiwing albums on YouTube for 14 years. Experience a data visualization of his thousands of album reviews!",
     "outlineColor": "30cf40",
     "mainColor": "38e849",
     "launchURL": "https://spencerarchsilverstein.shinyapps.io/TheNeedleDropData/",
     "githubURL": "https://github.com/SpencerArchSilverstein/TheNeedleDropReviews",
-    "languages": "R, RStudio, ShinyGG, YouTube API, JavaScript",
-    "projectType": "Gen",
-    "workedOnRange": "July 2023 - August 2023"
+    "languages": ["R", "RStudio", "ShinyGG", "YouTube API", "JavaScript"],
+    "projectType": "Project",
+    "workedOnRange": "July '23 - Aug '23"
+  },
+  {
+    "location": "Flowcode",
+    "title": "Software Eng Intern",
+    "detail": "Explore details about the club's history, schedule, FAQs, blog posts and more!",
+    "projectType": "Relevant Experience",
+    "workedOnRange": "June '25 - Aug '25",
+    "workDetails": [
+      "Developing a tile-based scratch-off/pick-your-prize customer experience using <b>Svelte 5, Go, Protocol Buffers, Flowbite, and GitHub.<b>",
+      "Constructing the gamified experience to collect email/behavioral data, increasing conversion rates by 10% and strengthening data-driven brand-to-consumer connections."
+    ]
+  },
+  {
+    "location": "Northwestern's Music Tasting Club",
+    "title": "Founder, Former President, & Web Dev",
+    "detail": "Explore details about the club's history, schedule, FAQs, blog posts and more!",
+    "projectType": "Relevant Experience",
+    "workedOnRange": "Jan '25 - June '25",
+    "workDetails": [
+      "Served as President of Northwestern’s music discourse club, led executive board, facilitated discussions on weekly music choices.",
+      "Built the <a href=`https://musictastingclub.com`> club's website using Typescript/React, GitHub Pages, and the MaterialUI library, to market the Music Tasting Club to Northwestern students, catalog previous album picks, answer members’ questions, detail executive board’s duties, and host articles."
+    ]
   }
 ]
