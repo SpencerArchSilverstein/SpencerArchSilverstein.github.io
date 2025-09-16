@@ -31,7 +31,12 @@ export default function ProjectsOrRelevantExperience({
           flexWrap: "wrap",
           justifyContent: "center",
           flex: "wrap",
-          //   gap: 10,
+          flexDirection:
+            projOrRelevExp === "Relevant Experience" ? "column" : "row",
+          alignItems:
+            projOrRelevExp === "Relevant Experience" ? "center" : "flex-start",
+          width: projOrRelevExp === "Relevant Experience" ? "50%" : "100%",
+          margin: projOrRelevExp === "Relevant Experience" ? "0 auto" : "0",
         }}
       >
         {projectData.map((proj, index) => (

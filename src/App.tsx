@@ -26,7 +26,6 @@ function App() {
       }}
     >
       <Intro />
-
       <ProjectsOrRelevantExperience projOrRelevExp={"Project"} />
       <hr style={{ marginTop: 30, marginLeft: "5%", marginRight: "5%" }} />
       <ProjectsOrRelevantExperience projOrRelevExp={"Relevant Experience"} />

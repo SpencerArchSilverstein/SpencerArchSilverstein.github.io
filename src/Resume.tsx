@@ -8,9 +8,9 @@ export function Resume({}) {
       </h1>
       <div className="flex justify-center items-center h-screen">
         <iframe
-          src="https://docs.google.com/document/d/1TZ94vJ86ezDk802_8kvySViTC5WGqL4WUzpNV3gkeP4/edit?usp=sharing"
+          src="https://docs.google.com/document/d/1TZ94vJ86ezDk802_8kvySViTC5WGqL4WUzpNV3gkeP4/preview"
           style={{
-            width: "90vh",
+            width: "90vw",
             height: "80vh",
             border: "none",
           }}

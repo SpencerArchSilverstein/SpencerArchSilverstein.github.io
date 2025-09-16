@@ -80,23 +80,44 @@
   {
     "location": "Flowcode",
     "title": "Software Eng Intern",
-    "detail": "Explore details about the club's history, schedule, FAQs, blog posts and more!",
+    "detail": "",
     "projectType": "Relevant Experience",
     "workedOnRange": "June '25 - Aug '25",
     "workDetails": [
-      "Developing a tile-based scratch-off/pick-your-prize customer experience using <b>Svelte 5, Go, Protocol Buffers, Flowbite, and GitHub.<b>",
+      "Developing a tile-based scratch-off/pick-your-prize customer experience using <b>Svelte 5</b>, <b>Go</b>, <b>Protocol Buffers</b>, <b>Flowbite</b>, and <b>GitHub</b>.",
       "Constructing the gamified experience to collect email/behavioral data, increasing conversion rates by 10% and strengthening data-driven brand-to-consumer connections."
     ]
   },
   {
     "location": "Northwestern's Music Tasting Club",
     "title": "Founder, Former President, & Web Dev",
-    "detail": "Explore details about the club's history, schedule, FAQs, blog posts and more!",
+    "detail": "",
     "projectType": "Relevant Experience",
     "workedOnRange": "Jan '25 - June '25",
     "workDetails": [
       "Served as President of Northwestern’s music discourse club, led executive board, facilitated discussions on weekly music choices.",
-      "Built the <a href=`https://musictastingclub.com`> club's website using Typescript/React, GitHub Pages, and the MaterialUI library, to market the Music Tasting Club to Northwestern students, catalog previous album picks, answer members’ questions, detail executive board’s duties, and host articles."
+      "Built the <a href=`https://musictastingclub.com` style='color: #61DBFB; font-weight: bold;'> club's website</a> using <b>Typescript/React</b>, <b>GitHub Pages</b>, and the <b>MaterialUI library</b>, to market the Music Tasting Club to Northwestern students, catalog previous album picks, answer members’ questions, detail executive board’s duties, and host articles."
+    ]
+  },
+  {
+    "location": "Northwestern's Academic Support & Learning Advancement",
+    "title": "Software Engineer",
+    "detail": "",
+    "projectType": "Relevant Experience",
+    "workedOnRange": "Sept '23 - June '25",
+    "workDetails": [
+      "Worked in <b>JavaScript</b> and with the <b>Google Drive API</b> to automate the creation of attendance sheets for hundreds of tutors, the creation of class resources, and the dispatching of weekly tutor feedback reports to professors."
+    ]
+  },
+  {
+    "location": "New York Stem Cell Foundation",
+    "title": "Software Engineering Intern",
+    "detail": "",
+    "projectType": "Relevant Experience",
+    "workedOnRange": "June '24 - Aug '24",
+    "workDetails": [
+      "Used <b>Typescript/React</b> and <b>MaterialUI</b>, building in-house web applications to further stem cell research. Created a site that converted a scientist’s desired specifications into instructions that automated research robots implemented.",
+      "Practiced <b>AGILE/SCRUM</b> methods as a member of a team, utilizing GitHub to track project progress and scope of work."
     ]
   }
 ]

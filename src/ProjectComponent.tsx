@@ -74,96 +74,142 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
 
   const responsiveStyle: CSSProperties = { fontSize: 20 };
 
+  const getCardStyle = (): CSSProperties => {
+    const baseStyle: CSSProperties = {
+      background: "#404040",
+      color: "#CCCCCC",
+      padding: 20,
+      display: "flex",
+      flexDirection: "column",
+    };
+
+    if (projectType === "Relevant Experience") {
+      return {
+        ...baseStyle,
+        width: "100%",
+        margin: "10px 0 10px 0",
+        // minHeight: "300px",
+        maxWidth: "none",
+      };
+    }
+
+    return {
+      ...baseStyle,
+      margin: 10,
+      width: 325,
+    };
+  };
+
+  const containerStyle: CSSProperties =
+    projectType === "Relevant Experience"
+      ? {
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          width: "100%",
+        }
+      : {};
+
+  const contentContainerStyle: CSSProperties = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  };
+
   return (
-    <>
-      <Card
-        style={{
-          background: "#404040",
-          color: "#CCCCCC",
-          margin: 10,
-          padding: 20,
-          width: projectType == "Relevant Experience" ? "50%" : 325,
-        }}
-      >
-        <div>
-          {projectType == "Project" && <h1>{title}</h1>}
-          {projectType == "Relevant Experience" && (
-            <h2 style={{ marginTop: -5 }}>
-              {title} @ {location}
-            </h2>
-          )}
-          {projectType == "Project" && (
-            <h4 style={{ marginTop: -10 }}>{workedOnRange}</h4>
-          )}
+    <div style={containerStyle}>
+      <Card style={getCardStyle()}>
+        <div style={contentContainerStyle}>
+          <div>
+            {projectType === "Project" && <h1>{title}</h1>}
+            {projectType === "Relevant Experience" && (
+              <h2 style={{ marginTop: -5 }}>
+                {title} @ {location}
+              </h2>
+            )}
 
-          <ul>
-            {workDetails &&
-              workDetails.map((bulletPoint: string) => {
-                return <li>{bulletPoint}</li>;
-              })}
-          </ul>
-        </div>
-
-        <div style={{ marginTop: 10 }}>
-          {projectType == "Project" && (
-            <h2 style={responsiveStyle}>{detail}</h2>
-          )}
-          {languages && (
-            <div
+            <h4
               style={{
-                display: "flex",
-                gap: "8px",
-                flexWrap: "wrap",
-                marginTop: 25,
-                marginBottom: 25,
+                marginTop: projectType === "Relevant Experience" ? -15 : -10,
               }}
             >
-              {languages.map((item) => {
-                const tech = techColors[item];
-                if (!tech) return null;
+              {workedOnRange}
+            </h4>
 
-                return (
-                  <Chip
-                    key={item}
-                    label={tech.label}
-                    style={{
-                      backgroundColor: tech.color + "CC",
-                      color: "#fff",
-                      fontWeight: "bold",
-                      cursor: "pointer",
-                      transition: "transform 0.2s ease, filter 0.2s ease",
-                    }}
-                  />
-                );
-              })}
-            </div>
-          )}
-        </div>
+            <ul style={{ flexGrow: 1 }}>
+              {workDetails &&
+                workDetails.map((bulletPoint: string, index: number) => {
+                  return (
+                    <li
+                      key={index}
+                      dangerouslySetInnerHTML={{ __html: bulletPoint }}
+                    ></li>
+                  );
+                })}
+            </ul>
+          </div>
 
-        <div style={projectTextTitleContStyle}>
-          {launchURL && (
-            <Launch
-              sx={{ fontSize: 50, cursor: "pointer" }}
-              onClick={() => openLink(launchURL)}
-            />
-          )}
-          {githubURL && (
-            <Button
-              href={githubURL}
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{ height: 60, width: 60 }}
-            >
-              <img
-                src={githubImg}
-                alt="GitHub"
-                style={{ width: "100%", height: "auto" }}
+          <div style={{ marginTop: 10 }}>
+            {projectType === "Project" && (
+              <h2 style={responsiveStyle}>{detail}</h2>
+            )}
+            {languages && (
+              <div
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  flexWrap: "wrap",
+                  marginTop: 25,
+                  marginBottom: 25,
+                }}
+              >
+                {languages.map((item) => {
+                  const tech = techColors[item];
+                  if (!tech) return null;
+
+                  return (
+                    <Chip
+                      key={item}
+                      label={tech.label}
+                      style={{
+                        backgroundColor: tech.color + "CC",
+                        color: "#fff",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        transition: "transform 0.2s ease, filter 0.2s ease",
+                      }}
+                    />
+                  );
+                })}
+              </div>
+            )}
+          </div>
+
+          <div style={projectTextTitleContStyle}>
+            {launchURL && (
+              <Launch
+                sx={{ fontSize: 50, cursor: "pointer" }}
+                onClick={() => openLink(launchURL)}
               />
-            </Button>
-          )}
+            )}
+            {githubURL && (
+              <Button
+                href={githubURL}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ height: 60, width: 60 }}
+              >
+                <img
+                  src={githubImg}
+                  alt="GitHub"
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </Button>
+            )}
+          </div>
         </div>
       </Card>
-    </>
+    </div>
   );
 };
 
