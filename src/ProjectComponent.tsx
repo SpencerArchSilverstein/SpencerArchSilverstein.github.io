@@ -212,6 +212,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                   alignItems: "center",
                   flexDirection: "column",
                   marginRight: -15,
+                  marginLeft: -15,
                 }}
               >
                 <Button disabled sx={{ opacity: 0.5, cursor: "not-allowed" }}>
