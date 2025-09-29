@@ -27,33 +27,64 @@ const SocialLinks: FC<SocialLinksProps> = ({
           justifyContent: "center",
           gap: "0.5rem",
           alignItems: "center",
-          marginTop: "-4rem",
+          marginTop: "-3rem",
+          marginLeft: 10,
         }}
       >
-        <Button
-          href="https://www.linkedin.com/in/spencer-silverstein/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          style={{
+            justifyContent: "center",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
         >
-          <img src={linkedInImg} alt="LinkedIn" className="company-logos" />
-        </Button>
-
-        <Button
-          href="https://github.com/SpencerArchSilverstein"
-          target="_blank"
-          rel="noopener noreferrer"
+          <Button
+            href="https://www.linkedin.com/in/arch-silverstein/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedInImg} alt="LinkedIn" className="company-logos" />
+          </Button>
+          <h5 style={{ marginTop: -10 }}>LinkedIn</h5>
+        </div>
+        <div
+          style={{
+            justifyContent: "center",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
         >
-          <img src={githubImg} alt="GitHub" className="company-logos" />
-        </Button>
-
-        <Button onClick={handleCopyEmail}>
-          <img
-            src={mailImg}
-            alt="Email"
-            className="company-logos"
-            style={{ width: 70, height: 70 }}
-          />
-        </Button>
+          <Button
+            href="https://github.com/SpencerArchSilverstein"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubImg} alt="GitHub" className="company-logos" />
+          </Button>
+          <h5 style={{ marginTop: -10 }}>GitHub</h5>
+        </div>
+        <div
+          style={{
+            justifyContent: "center",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            marginTop: -15,
+            marginLeft: -10,
+          }}
+        >
+          <Button onClick={handleCopyEmail}>
+            <img
+              src={mailImg}
+              alt="Email"
+              className="company-logos"
+              style={{ width: 70, height: 70 }}
+            />
+          </Button>
+          <h5 style={{ marginTop: -25 }}>Email me!</h5>
+        </div>
       </div>
 
       <Snackbar

@@ -10,7 +10,6 @@ import Intro from "./Intro";
 
 function App() {
   // const [glitchBool, setGlitchBool] = useState(false);
-
   //About Me
   //Resume (Work Experience, Project Experience)
   //Technical Skills

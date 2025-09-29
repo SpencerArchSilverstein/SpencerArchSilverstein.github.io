@@ -186,25 +186,72 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
           </div>
 
           <div style={projectTextTitleContStyle}>
-            {launchURL && (
-              <Launch
-                sx={{ fontSize: 50, cursor: "pointer" }}
-                onClick={() => openLink(launchURL)}
-              />
+            {launchURL ? (
+              <div
+                style={{
+                  justifyContent: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <Button sx={{ backgroundColor: "" }}>
+                  <Launch
+                    sx={{ fontSize: 50, cursor: "pointer", color: "#CCCCCC" }}
+                    onClick={() => openLink(launchURL)}
+                  />
+                </Button>
+                <h5 style={{ marginTop: 0 }}>Website</h5>
+              </div>
+            ) : (
+              <div
+                style={{
+                  justifyContent: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <Button disabled sx={{ opacity: 0.5, cursor: "not-allowed" }}>
+                  <Launch
+                    sx={{ fontSize: 50, cursor: "pointer", color: "#cccccc" }}
+                  />
+                </Button>
+                <h5
+                  style={{
+                    marginTop: 0,
+                    color: "#b3b3b3",
+                    width: 100,
+                    textAlign: "center",
+                  }}
+                >
+                  No Website
+                </h5>
+              </div>
             )}
             {githubURL && (
-              <Button
-                href={githubURL}
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{ height: 60, width: 60 }}
+              <div
+                style={{
+                  justifyContent: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
               >
-                <img
-                  src={githubImg}
-                  alt="GitHub"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </Button>
+                <Button
+                  href={githubURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ height: 60, width: 60 }}
+                >
+                  <img
+                    src={githubImg}
+                    alt="GitHub"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </Button>
+                <h5 style={{ marginTop: 0 }}>Code</h5>
+              </div>
             )}
           </div>
         </div>
