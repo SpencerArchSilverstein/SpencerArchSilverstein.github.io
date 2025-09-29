@@ -186,7 +186,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
           </div>
 
           <div style={projectTextTitleContStyle}>
-            {launchURL ? (
+            {launchURL && (
               <div
                 style={{
                   justifyContent: "center",
@@ -203,13 +203,15 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                 </Button>
                 <h5 style={{ marginTop: 0 }}>Website</h5>
               </div>
-            ) : (
+            )}
+            {title === "ASK AN AI" && (
               <div
                 style={{
                   justifyContent: "center",
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
+                  marginRight: -15,
                 }}
               >
                 <Button disabled sx={{ opacity: 0.5, cursor: "not-allowed" }}>
@@ -225,7 +227,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                     textAlign: "center",
                   }}
                 >
-                  No Website
+                  No Site
                 </h5>
               </div>
             )}
