@@ -81,6 +81,7 @@ const SocialLinks: FC<SocialLinksProps> = ({
               alt="Email"
               className="company-logos"
               style={{ width: 70, height: 70 }}
+              id="email-button"
             />
           </Button>
           <h5 style={{ marginTop: -25 }}>Email me!</h5>

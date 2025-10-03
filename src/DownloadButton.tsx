@@ -8,6 +8,7 @@ export default function DownloadButton() {
       download="ArchSilversteinResume.pdf"
       startIcon={<DownloadIcon sx={{ fontSize: 60, color: "#CCCCCC" }} />}
       style={{ width: "100%", height: 100 }}
+      id="download-resume"
     ></Button>
   );
 }
