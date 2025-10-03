@@ -169,6 +169,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
 
                   return (
                     <Chip
+                    
                       key={item}
                       label={tech.label}
                       style={{
@@ -177,6 +178,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                         fontWeight: "bold",
                         cursor: "pointer",
                         transition: "transform 0.2s ease, filter 0.2s ease",
+                        
                       }}
                     />
                   );
