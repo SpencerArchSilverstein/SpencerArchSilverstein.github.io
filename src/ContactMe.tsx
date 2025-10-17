@@ -75,6 +75,7 @@ const SocialLinks: FC<SocialLinksProps> = ({
             marginLeft: -10,
           }}
         >
+        
           <Button onClick={handleCopyEmail}>
             <img
               src={mailImg}
