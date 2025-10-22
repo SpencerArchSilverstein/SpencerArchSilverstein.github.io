@@ -78,8 +78,19 @@
     "workedOnRange": "July '23 - Aug '23"
   },
   {
+    "location": "Saffron",
+    "title": "Software Engineering Intern",
+    "detail": "",
+    "projectType": "Relevant Experience",
+    "workedOnRange": "Sept '25 - Oct '25",
+    "workDetails": [
+      "Improved <b>Wix</b> website experience tailored for private chefs and strengthened analytics infrastructure using <b>Google Tag Manager</b>.",
+      "Enhanced a Wix-based interest form using embedded <b>HTML5</b>, <b>CSS</b>, and <b>JavaScript</b>, and integrating the <b>Google Maps API</b> for location verification and the <b>Verifalia API</b> for email verification."
+    ]
+  },
+  {
     "location": "Flowcode",
-    "title": "Software Eng Intern",
+    "title": "Software Engineering Intern",
     "detail": "",
     "projectType": "Relevant Experience",
     "workedOnRange": "June '25 - Aug '25",

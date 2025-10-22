@@ -1,10 +1,11 @@
 import NYSCF_LOR from "./img/NYSCF_LOR.pdf";
-
+import FLOWCODE_LOR from "./img/FLOWCODE_LOR.pdf";
 export function LettersOfRecommendation() {
-  const LOR = (lor: any) => {
+  const LOR = ({ lor }: { lor: string }) => {
+    // console.log("lor" + lor.value);
     return (
       <iframe
-        src={NYSCF_LOR}
+        src={lor}
         style={{
           flex: "1 1 45%",
           minWidth: "320px",
@@ -38,6 +39,7 @@ export function LettersOfRecommendation() {
         }}
       >
         <LOR lor={NYSCF_LOR} />
+        <LOR lor={FLOWCODE_LOR} />
       </div>
     </>
   );
