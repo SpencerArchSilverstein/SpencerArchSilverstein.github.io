@@ -23,7 +23,7 @@ export default function ProjectsOrRelevantExperience({
   return (
     <>
       <h1 className="project-title">
-        {projOrRelevExp == "Project" ? "PROJECTS" : "RELEVANT EXPERIENCE"}
+        {projOrRelevExp === "Project" ? "PROJECTS" : "RELEVANT EXPERIENCE"}
       </h1>
       <div
         style={{ 
@@ -41,7 +41,7 @@ export default function ProjectsOrRelevantExperience({
       >
         {projectData.map((proj, index) => (
           <div key={index}>
-            {proj.projectType == "Project" && projOrRelevExp == "Project" ? (
+            {proj.projectType === "Project" && projOrRelevExp === "Project" ? (
               <>
                 <ProjectComponent
                   title={proj.title}
@@ -54,8 +54,8 @@ export default function ProjectsOrRelevantExperience({
                 />
               </>
             ) : (
-              proj.projectType == "Relevant Experience" &&
-              projOrRelevExp == "Relevant Experience" && (
+              proj.projectType === "Relevant Experience" &&
+              projOrRelevExp === "Relevant Experience" && (
                 <>
                   <ProjectComponent
                     location={proj.location}

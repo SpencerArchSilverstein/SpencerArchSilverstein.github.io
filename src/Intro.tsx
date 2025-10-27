@@ -12,8 +12,7 @@ export default function Intro() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-        }}
-      >
+        }}>
         <div style={{ margin: 40 }}>
           <div
             style={{
@@ -21,8 +20,7 @@ export default function Intro() {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-            }}
-          >
+            }}>
             <div
               style={{
                 width: 200,
@@ -33,8 +31,7 @@ export default function Intro() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-              }}
-            >
+              }}>
               <img
                 src={profilePic}
                 alt="ProfilePic"
@@ -47,15 +44,14 @@ export default function Intro() {
 
             <h1
               className="typewriter"
-              style={{ fontSize: 50, textAlign: "center", marginTop: 10 }}
-            >
+              style={{ fontSize: 50, textAlign: "center", marginTop: 10 }}>
               Hi, I'm Arch
             </h1>
             <h2 style={{ textAlign: "center" }}>
               SWE | Full Stack Developer | Northwestern '25
             </h2>
             <h3 style={{ marginTop: -5, textAlign: "center" }}>
-              Specialties: React, Svelte 5, Go, Typescript, Firebase/Firestore
+              Specialties: React, Svelte 5, Go, Typescript, GCP
             </h3>
           </div>
         </div>

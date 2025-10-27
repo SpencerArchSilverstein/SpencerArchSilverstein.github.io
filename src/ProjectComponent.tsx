@@ -2,12 +2,6 @@ import { Launch } from "@mui/icons-material";
 import { Button, Card, Chip } from "@mui/material";
 import React, { CSSProperties } from "react";
 import githubImg from "./img/graygithub.png";
-import MyGif from "./Glitch";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 type TechKey =
   | "React"
@@ -88,7 +82,6 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
         ...baseStyle,
         width: "100%",
         margin: "10px 0 10px 0",
-        // minHeight: "300px",
         maxWidth: "none",
       };
     }
@@ -97,6 +90,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
       ...baseStyle,
       margin: 10,
       width: 325,
+      height: 525,
     };
   };
 
@@ -114,6 +108,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
+    height: "100%", // Add this line
   };
 
   return (
@@ -131,8 +126,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
             <h4
               style={{
                 marginTop: projectType === "Relevant Experience" ? -15 : -10,
-              }}
-            >
+              }}>
               {workedOnRange}
             </h4>
 
@@ -142,8 +136,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                   return (
                     <li
                       key={index}
-                      dangerouslySetInnerHTML={{ __html: bulletPoint }}
-                    ></li>
+                      dangerouslySetInnerHTML={{ __html: bulletPoint }}></li>
                   );
                 })}
             </ul>
@@ -161,24 +154,21 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                   flexWrap: "wrap",
                   marginTop: 25,
                   marginBottom: 25,
-                }}
-              >
+                }}>
                 {languages.map((item) => {
                   const tech = techColors[item];
                   if (!tech) return null;
 
                   return (
                     <Chip
-                    
                       key={item}
                       label={tech.label}
                       style={{
                         backgroundColor: tech.color + "CC",
                         color: "#fff",
                         fontWeight: "bold",
-                        cursor: "pointer",
                         transition: "transform 0.2s ease, filter 0.2s ease",
-                        
+                 
                       }}
                     />
                   );
@@ -187,7 +177,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
             )}
           </div>
 
-          <div style={projectTextTitleContStyle}>
+          <div style={{ ...projectTextTitleContStyle, marginTop: "auto" }}>
             {launchURL && (
               <div
                 style={{
@@ -195,8 +185,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
-                }}
-              >
+                }}>
                 <Button sx={{ backgroundColor: "" }}>
                   <Launch
                     sx={{ fontSize: 50, cursor: "pointer", color: "#CCCCCC" }}
@@ -215,8 +204,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                   flexDirection: "column",
                   marginRight: -15,
                   marginLeft: -15,
-                }}
-              >
+                }}>
                 <Button disabled sx={{ opacity: 0.5, cursor: "not-allowed" }}>
                   <Launch
                     sx={{ fontSize: 50, cursor: "pointer", color: "#cccccc" }}
@@ -228,8 +216,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                     color: "#b3b3b3",
                     width: 100,
                     textAlign: "center",
-                  }}
-                >
+                  }}>
                   No Site
                 </h5>
               </div>
@@ -241,14 +228,12 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
-                }}
-              >
+                }}>
                 <Button
                   href={githubURL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  sx={{ height: 60, width: 60 }}
-                >
+                  sx={{ height: 60, width: 60 }}>
                   <img
                     src={githubImg}
                     alt="GitHub"
