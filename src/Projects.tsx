@@ -26,7 +26,7 @@ export default function ProjectsOrRelevantExperience({
         {projOrRelevExp == "Project" ? "PROJECTS" : "RELEVANT EXPERIENCE"}
       </h1>
       <div
-        style={{
+        style={{ 
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
